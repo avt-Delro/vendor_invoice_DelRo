@@ -1,0 +1,40 @@
+        # excel_filename = os.path.join(folder_path_upload, filename.replace('.pdf', '.xlsx'))
+        # wb = Workbook()
+        # ws = wb.active
+        # # pdf_path = os.path.join(full_path, filename)
+        # # excel_path = os.path.join(full_path, filename.replace('.pdf', '.xlsx'))
+
+        # with pdfplumber.open(os.path.join(full_path, filename)) as pdf:
+        #     row_num = 1
+        #     for pagenum, page in enumerate(pdf.pages, start=1):
+        #         text = page.extract_text()
+        #         if text:
+        #             ws.cell(row=row_num, column=1, value=f"Page{pagenum} - {text}")
+        #             row_num += 1
+        #             for line in text.split('\n'):
+        #                 ws.cell(row=row_num, column=1, value=line)
+        #                 row_num += 1
+        #                 print(text)
+        #                 print(f"Text in file {filename}, page {pagenum}:\n\n")
+                        
+                
+        #         tables = page.extract_tables()
+        #         for table in tables:
+        #             ws.cell(row=row_num, column=1, value=f"Page {pagenum} - Table")
+        #             row_num += 1
+        #             for row in table:
+        #                 for col_num, cell in enumerate(row, start=1):
+        #                     ws.cell(row=row_num, column=col_num, value=cell)
+        #                 row_num += 1        
+        #     wb.save(excel_filename)
+
+# for sub in list_of_shops:
+#     full_path = os.path.join(folder_path, sub)
+    
+#     if os.path.isdir(full_path):
+#         #logic here
+#         pass
+#     else:
+#         pass
+#         # os.makedirs(full_path)
+#         # print(f"Created missing subfolder: {full_path}")
