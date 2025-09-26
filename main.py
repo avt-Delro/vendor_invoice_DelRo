@@ -10,10 +10,9 @@ import pdfplumber
 from openpyxl import load_workbook
 
 
+
 list_of_shops = ["A2Z"]
 
-
-#Part of excel mapper
 def findthis(search_val, wb, wb_sheet):
     excel_file = load_workbook(wb)
     wb_sheet = excel_file.active
@@ -33,7 +32,7 @@ def findthis(search_val, wb, wb_sheet):
     print(f"{search_val} : {collected_inv}")
 
 
-#A simple mapper to get Invoice Date, Bill To, Ship to, Terms, Due Date
+#finds data from the excel file, 
 def excel_mapping(shop_name):
     folder_path = r"C:\Users\VJDELROSARIO\OneDrive - ATV INC\Desktop\Automation\vendor_invoice_Delro\files_downloaded"
     if os.path.exists(folder_path) == True:
@@ -189,7 +188,7 @@ def main():
     for shop in list_of_shops:
         createdirect(shop)
         convert_pdf_to_excel(shop)
-    excel_mapping(list_of_shops[0])
+    # excel_mapping(list_of_shops[0])
 
 main()
 
